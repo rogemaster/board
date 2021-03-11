@@ -15,10 +15,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class GuguController {
 	
+	// Servlet 방식 --------------------------------------------------------------------
 	@RequestMapping(value = "/gugudan", method = RequestMethod.GET)
 	public String GuguIndex1() {
 		
-		return "gugutest1";
+		return "gugudan/gugutest1";
 	}
 	
 	@RequestMapping(value = "/gugucal", method = RequestMethod.GET)
@@ -37,7 +38,7 @@ public class GuguController {
 		return "guguresult";
 	}
 	
-	
+	// JSP 방식----------------------------------------------------------------------
 	@RequestMapping(value = "/gugudan2", method = RequestMethod.GET)
 	public String GuguIndex2() {
 		
@@ -52,10 +53,12 @@ public class GuguController {
 		return "guguresult2";
 	}
 	
+	//-------------------------------------------------------------------------------
+	
 	@RequestMapping(value = "/gugudan3", method = RequestMethod.GET)
 	public String GuguIndex3() {
 		
-		return "gugutest3";
+		return "gugudan/gugutest3";
 	}
 	
 	//-------------------------------------------------------------------------------

@@ -27,7 +27,7 @@
 	<beans:bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
 		<beans:property name="driverClassName" value="org.mariadb.jdbc.Driver" />
 		<!--  <beans:property name="url" value="jdbc:mariadb://192.168.137.1:3306/gongbubang" />-->
-		<beans:property name="url" value="jdbc:mariadb://121.133.148.235:3306/steve_academy_2007_free" />
+		<beans:property name="url" value="jdbc:mariadb://14.36.171.221:3306/steve_academy_2007_free" />
 		<beans:property name="username" value="steveacademy2007" />
 		<beans:property name="password" value="20171q2wzZ!!" />
 	</beans:bean>
